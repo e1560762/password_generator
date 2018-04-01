@@ -19,7 +19,7 @@ if __name__ == '__main__':
 	kwargs['min'] = parsed.min_occurrence
 	kwargs['uppercase'] = True if parsed.uppercase_exists == "true" else False
 	kwargs['lowercase'] = True if parsed.lowercase_exists == "true" else False
-	kwargs['digits'] = True if parsed.digit_exists == "true" else False
+	kwargs['digit'] = True if parsed.digit_exists == "true" else False
 	kwargs['punctuation'] = True if parsed.punctuation_exists == "true" else False
 
 	pg = password_generator.PasswordGenerator()

@@ -17,7 +17,7 @@ class PasswordGenerator(object):
 			alphabet["l"] = ascii_lowercase
 			if min_occurrence:
 				min_length += min_occurrence
-		if kwargs.get('digits', True):
+		if kwargs.get('digit', True):
 			alphabet["d"] = digits
 			if min_occurrence:
 				min_length += min_occurrence
